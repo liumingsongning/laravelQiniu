@@ -1,0 +1,17 @@
+{
+    "name": "liuming/laravel-qiniu",
+    "require": {
+        "qiniu/php-sdk": "^7.2"
+    },
+    "authors": [
+        {
+            "name": "liu ming",
+            "email": "740921760@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "liuming\\laravelQiniu\\": "src/"
+        }
+    }
+}
