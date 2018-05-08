@@ -6,11 +6,15 @@
 composer require liuming/laravel-qiniu
 
 ```
-2,发布一下
+2,在 config/app.php 的 aliases 数组添加一行：
+```
+'laravelQiniu' =>  liuming\laravelQiniu\laravelQiniu::class,
+```
+3,发布一下
 ```
 php artisan vendor:publish
 ```
-3,找到config/laravelQiniu.php配置一下
+4,找到config/laravelQiniu.php配置一下
 ```
 <?php
 return [
@@ -22,7 +26,7 @@ return [
     ] // 只是为了演示
 ];
 ```
-4,在controller里调用
+5,在controller里调用
 ```
 <?php
 
